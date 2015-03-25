@@ -1,5 +1,5 @@
 {
-  "name": "mochify",
+  "name": "bant-mochify",
   "version": "2.6.1",
   "description": "TDD with Browserify, Mocha, PhantomJS and WebDriver",
   "keywords": [

@@ -1,4 +1,4 @@
-# Mochify
+# bant-mochify
 
 [![Build Status]](https://travis-ci.org/mantoni/mochify.js)
 [![SemVer]](http://semver.org)
