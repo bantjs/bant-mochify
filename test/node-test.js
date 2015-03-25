@@ -220,4 +220,13 @@ describe('node', function () {
       });
   });
 
+  it('uses a bant manifest', function (done) {
+    run('passes', ['--node', '-R', 'tap', '-u', '../bant.json'],
+      function (code, stdout) {
+        assert.equal(stdout.split('\n')[1], 'required');
+        assert.equal(code, 0);
+        done();
+      });
+  });
+
 });

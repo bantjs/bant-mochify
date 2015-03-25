@@ -155,6 +155,12 @@ describe('args', function () {
     assert.equal(opts.require, 'foo');
   });
 
+  it('parses --use', function () {
+    var opts = args(['--use', 'foo']);
+
+    assert.equal(opts.use, 'foo');
+  });
+
   it('parses --extension', function () {
     var opts = args(['--extension', 'foo']);
 
@@ -165,6 +171,12 @@ describe('args', function () {
     var opts = args(['-r', 'foo']);
 
     assert.equal(opts.require, 'foo');
+  });
+
+  it('parses -u', function () {
+    var opts = args(['-u', 'foo']);
+
+    assert.equal(opts.use, 'foo');
   });
 
   it('parses --grep', function () {
